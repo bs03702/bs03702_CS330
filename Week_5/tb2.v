@@ -2,8 +2,8 @@ module tb2
   (
   
   );
-  wire [63:0] imm_data;
-  reg [63:0] instruction;
+ wire [63:0] imm_data;
+  reg [31:0] instruction;
   
   immediate_data_extractor ide
     (
