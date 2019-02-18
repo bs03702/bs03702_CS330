@@ -2,7 +2,7 @@
 vlog immediate_data_extractor.v tb2.v
  
 #no optimization
-vsim -novopt work.tb 
+vsim -novopt work.tb2 
   
 #view waves
 view wave
