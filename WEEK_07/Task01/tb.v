@@ -36,7 +36,7 @@ module tb
         rs1 = 5'b00001;
         rs2 = 5'b00010;
         rd <= 5'b0;
-        reset = 0;            //when rd == 0  write 0
+        reset = 1'b0;            //when rd == 0  write 0
         regWrite =1'b1;
         
         #10
@@ -47,8 +47,13 @@ module tb
         reset = 1'b0;        //when reset == 0   write
         regWrite =1'b1;
         
+        #5 
+        rd = rs2;
+        
+        #5
+        rs1 = rd;
+        
         #10
-      
         rs1 = 5'b00001;
         rs2 = 5'b00011;
                 
