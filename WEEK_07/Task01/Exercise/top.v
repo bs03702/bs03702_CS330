@@ -12,7 +12,7 @@ module top
 	       wire [6:0] funct7;
 	       
 	      wire [63:0] WriteData ;
-        wire clk, reset, RegWrite ;
+        wire clk, reset, regWrite ;
     
 	       instruction_parser instpar001
 	       (
